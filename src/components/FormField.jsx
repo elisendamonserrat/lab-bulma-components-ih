@@ -1,15 +1,18 @@
 import React, { Component } from 'react'
 import 'bulma/css/bulma.css'
+import './FormFields.css'
 
 
-export class FormField extends Component {
+export default class FormField extends Component {
     render() {
         return (
-            <div>
-                
-            </div>
+          <div className='field'>
+            <label className='label'>{this.props.label}</label>
+            <div class="control">
+                <input class="input is-normal" type={this.props.type} placeholder={this.props.placeholder} />
+             </div>
+          </div>
         )
     }
 }
 
-export default FormField
