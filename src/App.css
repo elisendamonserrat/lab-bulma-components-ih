@@ -1,4 +1,8 @@
-.form {
+.App {
+    margin: 1em;
+}
+
+.auth__form {
     width: 90%;
     max-width: 900px;
     margin: 2em auto;

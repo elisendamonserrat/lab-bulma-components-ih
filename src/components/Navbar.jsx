@@ -1,13 +1,20 @@
 import React, { Component } from 'react'
 import 'bulma/css/bulma.css'
+import CoolButton from './CoolButton'
 
 export default class Navbar extends Component {
     render() {
         return (
-            <nav className="navbar $navbar-background-color is-light" role="navigation" aria-label="main navigation">
+            <nav className="navbar is-transparent" role="navigation" aria-label="main navigation">
                 <div className="navbar-brand">
                     <a className="navbar-item" href="https://bulma.io">
                     <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"></img>
+                    </a>
+
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
                     </a>
                 </div>
 
@@ -21,14 +28,10 @@ export default class Navbar extends Component {
                         <div className="navbar-item">
                           <div className="field is-grouped">
                               <p className="control">
-                                <a href="#" className="button is-info">
-                                  Login
-                                </a>
+                                 <CoolButton name="Login"/>
                               </p>
                               <p class="control">
-                                <a href="#" class="button is-primary">
-                                 Signup
-                                </a>
+                                 <CoolButton name="Signup"/>
                               </p>
                           </div>
                         </div>
