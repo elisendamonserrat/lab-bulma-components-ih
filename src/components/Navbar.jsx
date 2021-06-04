@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import 'bulma/css/bulma.css'
 import CoolButton from './CoolButton'
+import clsx from 'clsx';
 
 export default class Navbar extends Component {
     render() {
@@ -28,10 +29,10 @@ export default class Navbar extends Component {
                         <div className="navbar-item">
                           <div className="field is-grouped">
                               <p className="control">
-                                 <CoolButton name="Login"/>
+                                 <CoolButton isSmall isRounded isDanger>Login</CoolButton>
                               </p>
                               <p class="control">
-                                 <CoolButton name="Signup"/>
+                                 <CoolButton isSmall isSuccess>Signup</CoolButton>
                               </p>
                           </div>
                         </div>
