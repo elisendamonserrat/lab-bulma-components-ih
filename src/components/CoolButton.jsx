@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import 'bulma/css/bulma.css'
+import clsx from 'clsx';
 
 export default class CoolButton extends Component {
     render() {
