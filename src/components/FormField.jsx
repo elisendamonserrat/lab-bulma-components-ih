@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import 'bulma/css/bulma.css'
-import './FormFields.css'
 
 
 export default class FormField extends Component {

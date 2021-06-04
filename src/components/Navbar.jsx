@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import 'bulma/css/bulma.css'
 import CoolButton from './CoolButton'
-import clsx from 'clsx';
 
 export default class Navbar extends Component {
     render() {
